@@ -1,0 +1,92 @@
+.media {
+  background-color: var(--dark);
+  color: var(--white);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  place-content: center;
+  padding: 0 10rem;
+  &--card {
+    &-heading {
+      font-size: 2rem;
+      padding-bottom: 4rem;
+      text-transform: uppercase;
+    }
+    & > *:not(.media--card-heading) {
+      font-size: 1.5rem;
+    }
+    &-pera {
+      line-height: 2.5rem;
+      color: var(--secondary);
+    }
+    &-icon {
+      display: flex;
+      span {
+        height: 4rem;
+        width: 4rem;
+        background-color: var(--form);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2.5rem;
+        margin-right: 1.6rem;
+
+        i {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    &-table {
+      width: 100%;
+      tr {
+        td:not(:first-child) {
+          color: var(--gray);
+        }
+      }
+    }
+    &-image {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+    &-img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &-news {
+      color: var(--secondary);
+    }
+    &-email,
+    &-subscribe {
+      width: 100%;
+      height: 5rem;
+      margin-top: 1.8rem;
+      border-radius: 1px;
+      input {
+        background: transparent;
+        border: none;
+        height: 100%;
+        width: 100%;
+      }
+      ::placeholder {
+        color: var(--secondary);
+        text-align: center;
+        font-size: 1.6rem;
+      }
+    }
+    &-email {
+      background-color: var(--gray-dark);
+    }
+
+    &-subscribe {
+      background-color: var(--form);
+      input {
+        color: var(--secondary);
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

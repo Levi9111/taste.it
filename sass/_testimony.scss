@@ -1,0 +1,99 @@
+.testimony {
+  // overflow: hidden;
+  // background-color: var(--info);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../img/bg_5.jpg);
+  background-size: cover;
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+
+  &--5cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100rem;
+    height: 50rem;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &--statement {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.7s;
+  }
+
+  &--manual {
+    &-btn {
+      border: none;
+      border-radius: 50%;
+      padding: 0.5rem;
+      margin: 0 0.3rem;
+      background-color: var(--gray);
+      cursor: pointer;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &--title {
+    text-align: center;
+    h1 {
+      text-transform: capitalize;
+    }
+  }
+  &--text {
+    font-size: 2rem;
+    width: 40%;
+    text-align: center;
+  }
+  &--image {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    position: relative;
+    padding: 3rem 0;
+    &-img {
+      height: 2rem;
+      width: 2rem;
+    }
+    &-icon {
+      position: absolute;
+      right: 0;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      background-color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .fa-quote-left {
+        font-size: 2rem;
+        color: var(--danger);
+      }
+    }
+  }
+  &--customer {
+    text-align: center;
+    font-size: 1.2rem;
+    span {
+      padding: 2rem;
+    }
+  }
+}
